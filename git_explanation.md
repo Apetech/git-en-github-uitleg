@@ -328,6 +328,7 @@ $ git clone <url>
 
 
 ###  3.2. <a name='Push'></a>Push
+Push stuurt je lokale veranderingen (commits) naar een remote repository op GitHub.
 De syntax is:
 ```
 $ git push <remote> <branch>
@@ -343,7 +344,7 @@ $ git push -u origin main
 Je kunt op twee manieren een repo pushen naar GitHub.
 
 **Optie 1** (een bestaande repo)
-- Maak een nieuwe repo aan op GitHub
+- Maak een nieuwe (lege!) repo aan op GitHub
 - Verbind je lokale repo hiermee (add a remote):
     ```
 	$ git remote add <remote> <url>
@@ -373,9 +374,9 @@ Je kunt op twee manieren een repo pushen naar GitHub.
     ```
 
 
-Alle commando's van optie 1 achter elkaar:
+Alle commando's van **optie 1** achter elkaar:
 ```
-git remote add origin https://github.com/Apetech/
+git remote add origin https://github.com/Robert/
 book123.git
 
 git branch -M main
@@ -387,7 +388,7 @@ git push -u origin main
     💡 De "-u" voegt een (tracking-)referentie toe aan de GitHub server waarnaar je aan het pushen bent. Wat hieraan belangrijk is, is dat je later een "git pull" kunt doen zonder nogmaals de argumenten mee te geven. 
 
 
-Alle commando's van optie 2 achter elkaar:
+Alle commando's van **optie 2** achter elkaar:
 ```
 git init
 
@@ -399,7 +400,7 @@ git branch -M main
 // "-M" staat voor "--move --force"
 // en hernoemt "master" in "main".
 
-git remote add origin https://github.com/Apetech/book123.git
+git remote add origin https://github.com/Robert/book123.git
 
 git push -u origin main
 ```
@@ -422,6 +423,8 @@ $ git pull
 
 Vervolgens bewerken en toevoegen:
 ```
+$ git add .
+of
 $ git add -A
 ```
 De "-A" staat voor alle files
@@ -445,7 +448,7 @@ Toevoegen van een nieuwe remote:
 $ git remote add <name> <URL>
 
 // Bijvoorbeeld:
-$ git remote add origin https://github.com/robertn/git123.git
+$ git remote add origin https://github.com/robert/git123.git
 ```
 Origin is de (vaak gebruikte) naam (lees: label) van de GitHub url.
 
