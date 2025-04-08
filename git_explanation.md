@@ -124,6 +124,10 @@ Dit kopieert de repository *git123* naar de folder *test123*. En maakt hierbij l
 De volgende stappen herhaal je vaak in je workflow. Het maken van (1) een *add* en vervolgens (2) een *commit*. Een commit is een soort snapshot (of checkpoint). Doe een add en commit na elke groepering van aanpassingen.
 
 Je hebt bijvoorbeeld een aanpassing aan een file gedaan of een file verwijdert. Sla vervolgens je aanpassingen op en doe een commit.
+```
+Workflow:
+[working directory] ⇨ git add ⇨ [staging area] ⇨ git commit ⇨ [local repo]
+```
 
 ###  2.6. <a name='Stap1:Staging'></a>Stap 1: Staging
 ```
@@ -349,7 +353,7 @@ Je kunt op twee manieren een repo pushen naar GitHub.
     ```
 	$ git remote add <remote> <url>
 	// bijvoorbeeld:
-	$ git remote add origin https://github.com/Apetech/book123.git
+	$ git remote add origin https://github.com/Robert/book123.git
     ```
 - Push je aanpassingen naar GitHub:
     ```
