@@ -139,7 +139,7 @@ Maak bijvoorbeeld twee files aan en stage deze:
 ```
 $ git add file1.txt file2.txt
 ```
-Je kunt alle files in 1x stagen (let op de punt):
+Je kunt alle files in één keer stagen (let op de punt):
 ```
 $ git add .
 ```
@@ -260,11 +260,27 @@ $ git checkout <commit nr>
 ```
 Hiermee ga je naar deze commit (type het commit nummer volledig of alleen de eerste 7 karakters).
 
-💡Soms zie je de term “detached HEAD state”; hierin kun je experimenteren met changes en commits doen. Vervolgens kun je teruggaan naar een branch zonder impact te hebben.
+💡Soms zie je de term “detached HEAD state”; hierin kun je experimenteren met changes en commits doen.
+Vervolgens kun je teruggaan naar een branch zonder impact te hebben:
+
+```
+$ git switch -
+```
+Als je wel veranderingen wilt aanbrengen, kun je lokaal de remote branch koppelen:
+```
+$ git switch <remote branch>
+```
+Om hierna met add en commit je veranderingen door te voeren en push deze:
+```
+$ git push origin <remote branch>
+```
+Vervolgens kun je terug switchen naar een lokale branch.
+
+    💡Dit is de juiste manier van werken; je experimenteert niet de master/main branch maar op een feature branch. 
 
 ###  2.16. <a name='Merging'></a>Merging
 
-Merging voegt branches samen. De master branch heet ook wel de *source of truth* en daar experimenteer je niet op. Experimenteren doe je op een *trunk*; een andere branch.
+Merging voegt branches samen. De master branch heet ook wel de *source of truth* en daar experimenteer je niet op. Experimenteren doe je op een *trunk*, dit is een (andere) feature branch.
 Samenvoegen van features op de trunk op de master heet merging.
 
     ⚠️ Je merged branches, niet commits! En altijd naar waar de HEAD is.
