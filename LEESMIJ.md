@@ -27,9 +27,12 @@ Het doel is om de lezer de meest gebruikte git commando's (vaak met voorbeelden)
 Deze repository is volledig geschreven in markdown language.
 
 ## 5. <a name='Scope'></a>Scope
-De stof bevat omvat de belangrijkste commando's van Git en de interactie met GitHub. Het is primair bedoeld voor gebruikers die (nog) niet in teams werken.
+De stof bevat omvat de belangrijkste commando's van Git en de interactie met GitHub. Het is primair bedoeld voor gebruikers die (nog) niet in teams werken. Er wordt ook niet diep ingegaan op Linux commando's.
 ```
 ⚠️ Buiten de scope vallen de onderwerpen die voor teams wèl interessant zijn, zoals:
 - Pull Requests (PR's)
 - Forks
+- Rebase
+- Tools als GitKraken, Sourcetree of SmartGit
+- GitHub Pages
 ```
